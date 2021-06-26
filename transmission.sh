@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
-APPLICATION_SERVICE_PATH="/opt/htdocs/P.Services"
-#APPLICATION_SERVICE_PATH="/data/www/P.Services"
-PHP_BIN_PATH="/usr/bin/php"
-#PHP_BIN_PATH="/usr/bin/php73"
+#APPLICATION_SERVICE_PATH="/opt/htdocs/P.Services"
+APPLICATION_SERVICE_PATH="/data/www/P.Services"
+#PHP_BIN_PATH="/usr/bin/php"
+PHP_BIN_PATH="/usr/bin/php73"
 
 TRANSMISSION_DOWNLOAD_DIR="/var/lib/transmission/Downloads"
 
@@ -43,7 +43,7 @@ do
   elif [ -d "$file" ]
   then
     EXCLUDE_DIR_NAME=$(basename "$file")
-    if [ "$EXCLUDE_DIR_NAME" == "cache" ] || [ "$EXCLUDE_DIR_NAME" == "incomplete" ]
+    if [ "$EXCLUDE_DIR_NAME" == "cache" ] || [ "$EXCLUDE_DIR_NAME" == "incomplete" ] || [ "$EXCLUDE_DIR_NAME" == "hls" ]
     then
       continue
     fi
