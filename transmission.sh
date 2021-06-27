@@ -33,8 +33,7 @@ do
     || [ "$DOWNLOADED_FILE_EXTENSION" == "ttml" ] \
     || [ "$DOWNLOADED_FILE_EXTENSION" == "sbv" ] \
     || [ "$DOWNLOADED_FILE_EXTENSION" == "dfxp" ] \
-    || [ "$DOWNLOADED_FILE_EXTENSION" == "vtt" ] \
-    || [ "$DOWNLOADED_FILE_EXTENSION" == "txt" ]
+    || [ "$DOWNLOADED_FILE_EXTENSION" == "vtt" ]
     then
       mv "$file" "$DESTINATION_FILE"
       FILE_STRINGS_F="$FILE_STRINGS_F""$HASH_FILE_NAME"."$DOWNLOADED_FILE_EXTENSION",
@@ -72,8 +71,7 @@ do
       || [ "$DOWNLOADED_FILE_EXTENSION" == "ttml" ] \
       || [ "$DOWNLOADED_FILE_EXTENSION" == "sbv" ] \
       || [ "$DOWNLOADED_FILE_EXTENSION" == "dfxp" ] \
-      || [ "$DOWNLOADED_FILE_EXTENSION" == "vtt" ] \
-      || [ "$DOWNLOADED_FILE_EXTENSION" == "txt" ]
+      || [ "$DOWNLOADED_FILE_EXTENSION" == "vtt" ]
       then
         mv "$file_sub" "$DESTINATION_FILE"
         FILE_STRINGS_D="$FILE_STRINGS_D""$HASH_FILE_NAME"."$DOWNLOADED_FILE_EXTENSION",
